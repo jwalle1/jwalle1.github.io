@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button Switch</title>
+    <style>
+        .radio-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .radio-option {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+	<h1>WHO WON THE DEBATE?</h1>
+    <div class="radio-container">
+        <label class="radio-option">
+            <input type="radio" name="switch" id="option1" onclick="switchOption()">
+            President Trump
+        </label>
+        <label class="radio-option">
+            <input type="radio" name="switch" id="option2" onclick="switchOption()">
+            Comrade Harris
+        </label>
+    </div>
+
+    <script>
+        function switchOption() {
+            const option1 = document.getElementById('option1');
+            const option2 = document.getElementById('option2');
+
+            // Toggle the checked state of the radio buttons
+            if (option1.checked) {
+                option2.checked = true;
+            } else {
+                option1.checked = true;
+            }
+        }
+    </script>
+</body>
+</html>
