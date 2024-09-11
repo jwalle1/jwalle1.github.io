@@ -34,7 +34,7 @@
 
             // Toggle the checked state of the radio buttons
             if (option1.checked) {
-                option1.checked = true;
+                option2.checked = true;
             } else {
                 option1.checked = true;
             }
